@@ -2,27 +2,10 @@
       <header style="margin-top:50px; height:95vh" class="page-header home home-slider-1">
         <div class="slider caption-slider direction-nav">
           <div class="block-caption-slider overlay-container">
-            <div style="background-image: url(assets/images/background/background-18.jpg); background-position: center center" class="__img-background"></div>
-            <div class="overlay bgc-dark-o-5">
-              <div class="cell-vertical-wrapper">
-                <div class="cell-middle">
-                  <div class="caption-preset-simple-1 text-center">
-                    <div class="container">
-                      <div class="caption-wrapper"><a href="index.html" class="megatron logo-light size-3 caption">
-                          <div class="logo"><svg viewBox="0 0 100 100"> <g> <path d="M64.264,31.886v56.803l-14.319,8.259l-14.319-8.259v-74.3L14.157,26.771v41.271l7.156,4.128V30.905   l13.467-7.768v8.26l-6.311,3.64V84.56L7,72.178v-49.54L42.781,2v82.553l7.162,4.132l7.163-4.132V27.758L64.264,31.886z    M43.626,26.294l6.317-3.644L71.42,35.038V84.56l21.469-12.382v-49.54L57.106,2v15.546l7.157,4.128v-7.285l21.469,12.382v41.271   l-7.156,4.128V30.905L49.943,14.391l-6.317,3.644V26.294z"/> </g> </svg>
-                          </div>
-                          <div class="brand">MEGATRON</div></a>
-                        <h1 class="text-responsive size-ll caption">MULTI-PURPOSE AND <br/> CREATIVE THEME</h1>
-                        <p class="font-serif-italic fz-3 caption">Beautifully suited for all your web-based needs</p>
-                        <div class="__buttons caption"><a href="index.html" class="btn btn-primary fullwidth">SELECT DEMO</a><br/><a href="http://goo.gl/fi9Eas" target="_blank" class="btn btn-secondary fullwidth">PURCHASE NOW</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div style="background-image: url(<?php echo base_url() ?>assets/images/slider/slider1.png); background-position: center center; background-size:100%; background-position-y: 40px;" class="__img-background"></div>
+            
           </div>
-          <div class="block-caption-slider overlay-container">
+          <!--<div class="block-caption-slider overlay-container">
             <div style="background-image: url(assets/images/background/background-38.jpg); background-position: undefined" class="__img-background"></div>
             <div class="overlay bgc-dark-o-5">
               <div class="cell-vertical-wrapper">
@@ -78,7 +61,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </header>
       <!--End Page Header-->

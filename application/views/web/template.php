@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Megatron - Multipurpose Responsive HTML5 Template</title>
+    <title><?php echo $title ?></title>
     <meta name="description" content="Megatron - Multipurpose Responsive HTML5 Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
@@ -46,7 +46,7 @@
     <!--Page Content-->
     <div class="page-content">
       <!-- Page Navigation-->
-      <div class="main-nav bgc-sintec bottom-line nav-absolute">
+      <div class="main-nav bgc-sintec bottom-line <?php echo $page == 'index'? 'nav-absolute':'' ?>">
         <div class="__middle">
           <div class="container">
             <div class="nav-content-wrapper">
@@ -64,10 +64,18 @@
               <div class="pull-right">
                 <nav class="os-menu  main-menu text-center">
                   <ul>
-                    <li><a href="#">BERANDA</a></li>
-                    <li><a href="#">TENTANG KAMI</a></li>
-                    <li><a href="#">PORTOFOLIO</a></li>
-                      <li><a href="#">BLOG</a>
+                    <li><a href="<?php echo base_url(); ?>">BERANDA</a></li>
+                    <li><a href="#">TENTANG KAMI</a>
+                      <ul class="multi-floor-menu menu-right-base">
+                        <li><a href="<?php echo base_url(); ?>main/sejarah">SEJARAH SINTEC</a></li>
+                        <li><a href="<?php echo base_url(); ?>main/strukturorganisasi">KEPENGURUSAN</a></li>
+                        <li><a href="#">PEMBINA</a></li>
+                        <li><a href="#">PELATIH</a></li>
+                        <li><a href="#">ALUMNI</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="<?php echo base_url() ?>main/portofolio">PORTOFOLIO</a></li>
+                    <li><a href="#">BLOG</a>
                       <ul class="multi-floor-menu menu-right-base">
                         <li><a href="#">BLOG LARGE IMAGE</a>
                           <ul>
@@ -131,7 +139,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li><a href="#">JASA</a></li>
+                  <li><a href="#">JASA</a></li>
                    
                   
                     <li><a href="#">WORKS</a>
