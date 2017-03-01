@@ -4,6 +4,7 @@
 .main-menu > ul > li > a {
     color: white;
 }
+
 .megatron.inline .logo {
     width: 150px;
     height: auto;
@@ -11,6 +12,55 @@
 .megatron .logo img {
     width: 100%;
     height: 100%;
+}
+
+.section-header{
+    margin-bottom: 0px !important;
+}
+
+.section-header h2{
+    font-size: 20px;
+
+}
+.page-header{
+    background-image: url('http://localhost/websintec/assets/images/bg-header.jpg');
+    margin-top: 90px;
+}
+.notebook-background{
+    background-image: url('http://localhost/websintec/assets/images/header-background.png');
+    background-size: 640px;
+    background-repeat: no-repeat;
+    height: 420px;
+    margin-top: 50px;
+}
+section.slider{
+    width: 470px;
+    margin-left: 85px;
+    margin-right: auto;
+    margin-top: 34px;
+    height: 292px;
+    top: 34px;
+}
+.flexslider{
+  border: none;
+}
+.slides li{
+    display: block !important;
+}
+.flex-direction-nav a {
+  top:40%;
+}
+.flex-caption {
+  position: absolute;
+  width: 30%;
+  padding: 2%;
+  right: 0;
+  bottom: 60px;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
 }
 .pengurus-section{
     padding-top: 20px;
@@ -47,4 +97,73 @@
 }
 .article .detail.post .__meta{
     margin-bottom: 0px;
+}
+
+.blogs-terbaru .blog{
+    width: 33.3%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.blog-kategori{
+    position: relative;
+    top: -25px;
+    display: block;
+    background: #535353;
+    margin-bottom: -25px;
+    color: white;
+    padding-left: 10px;
+    font-weight: 600;
+}
+/*Card Blog*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 340px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+h4.judul-posting{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 15px;
+   /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;*/
+
+}
+.card .container {
+    padding: 2px 6px;
+    width: 100%;
+}
+.card .container .bottom{
+    position: relative;
+    bottom: 0;
+}
+.card .container .bottom .jenis, .card .container .bottom .tanggal-posting, .card .container .bottom .view{
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.card .container .bottom h4{
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.card .container .bottom i{
+    font-size: 14px;
 }

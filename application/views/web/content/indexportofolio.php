@@ -12,12 +12,11 @@
                 foreach($portofolio as $q_portofolio){
                   ?>
                   <div class="grid-item col-md-3 col-sm-6 col-xs-12 graphic-design social-marketing web-design">
-                    <div class="block-portfolio overlay-container basic zoom"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $q_portofolio->gambar ?>" alt="BY THE SEA " class="__image"/>
+                    <div class="block-portfolio overlay-container basic zoom"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $q_portofolio->gambar ?>" alt="<?php echo $q_portofolio->judul_portofolio ?>" class="__image"/>
                       <div class="overlay bgc-dark-o-7">
                         <div class="cell-vertical-wrapper">
                           <div class="cell-middle">
-                            <h4 class="__title"><a href="#">BY THE SEA </a></h4>
-                            <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                            <h4 class="__title"><a href="<?php echo base_url().'main/portofolio/detail/'.$q_portofolio->slug_portofolio ?>"><?php echo $q_portofolio->judul_portofolio ?></a></h4>
                           </div>
                         </div><a href="<?php echo base_url() ?>assets/images/portofolio/<?php echo $q_portofolio->gambar ?>" class="__zoom zoom-button"><i class="icon-resize-full"></i></a>
                       </div>

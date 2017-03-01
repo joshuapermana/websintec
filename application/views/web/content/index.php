@@ -1,70 +1,25 @@
- <!--Page Header-->
-      <header style="margin-top:50px; height:95vh" class="page-header home home-slider-1">
-        <div class="slider caption-slider direction-nav">
-          <div class="block-caption-slider overlay-container">
-            <div style="background-image: url(<?php echo base_url() ?>assets/images/slider/slider1.png); background-position: center center; background-size:100%; background-position-y: 40px;" class="__img-background"></div>
-            
-          </div>
-          <!--<div class="block-caption-slider overlay-container">
-            <div style="background-image: url(assets/images/background/background-38.jpg); background-position: undefined" class="__img-background"></div>
-            <div class="overlay bgc-dark-o-5">
-              <div class="cell-vertical-wrapper">
-                <div class="cell-middle">
-                  <div class="caption-preset-simple-5 text-center">
-                    <div class="container">
-                      <div class="caption-wrapper">
-                        <h1 class="text-responsive size-ll caption">30+ UNIQUE HOMEPAGES</h1>
-                        <p class="font-serif-italic fz-3 caption">This is time to build your great brand new website</p>
-                        <div class="__buttons caption"><a href="index.html" class="btn btn-primary fullwidth">SELECT DEMO</a><br/><a href="http://goo.gl/fi9Eas" target="_blank" class="btn btn-secondary fullwidth">PURCHASE NOW</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="block-caption-slider overlay-container">
-            <div style="background-image: url(assets/images/background/background-8.jpg); background-position: undefined" class="__img-background"></div>
-            <div class="overlay bgc-dark-o-5">
-              <div class="cell-vertical-wrapper">
-                <div class="cell-middle">
-                  <div class="caption-preset-simple-3 text-center">
-                    <div class="container">
-                      <div class="caption-wrapper">
-                        <div class="__logo caption"><img src="assets/images/svg-logo/Logo-13-white.svg" alt="logo" class="img-responsive center-block"/></div>
-                        <h1 class="text-responsive size-ll caption">PRICE IS WHAT YOU PAY <br/> VALUE IS WHAT YOU GET</h1>
-                        <p class="font-serif-italic fz-3 caption">We will work with you to fully understand your business and your target</p>
-                        <div class="__buttons caption"><a href="index.html" class="btn btn-primary fullwidth">SELECT DEMO</a><br/><a href="http://goo.gl/fi9Eas" target="_blank" class="btn btn-secondary fullwidth">PURCHASE NOW</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="block-caption-slider overlay-container">
-            <div style="background-image: url(assets/images/background/background-15.jpg); background-position: undefined" class="__img-background"></div>
-            <div class="overlay bgc-dark-o-5">
-              <div class="cell-vertical-wrapper">
-                <div class="cell-middle">
-                  <div class="caption-preset-simple-2 text-center">
-                    <div class="container">
-                      <div class="caption-wrapper"><a href="index.html" class="megatron logo-light size-3 caption">
-                          <div class="logo"><svg viewBox="0 0 100 100"> <g> <path d="M64.264,31.886v56.803l-14.319,8.259l-14.319-8.259v-74.3L14.157,26.771v41.271l7.156,4.128V30.905   l13.467-7.768v8.26l-6.311,3.64V84.56L7,72.178v-49.54L42.781,2v82.553l7.162,4.132l7.163-4.132V27.758L64.264,31.886z    M43.626,26.294l6.317-3.644L71.42,35.038V84.56l21.469-12.382v-49.54L57.106,2v15.546l7.157,4.128v-7.285l21.469,12.382v41.271   l-7.156,4.128V30.905L49.943,14.391l-6.317,3.644V26.294z"/> </g> </svg>
-                          </div></a>
-                        <h1 class="text-responsive size-ll caption">CREATIVITY HAS NO <br/> BOUNDARIES</h1>
-                        <p class="font-serif-italic fz-3 caption">Welcome to Megatron Creative. We are Creative Studio</p>
-                        <div class="__buttons caption"><a href="index.html" class="btn btn-primary fullwidth">SELECT DEMO</a><br/><a href="http://goo.gl/fi9Eas" target="_blank" class="btn-border btn-light fullwidth">PURCHASE NOW</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
+      <div class="page-header">
+        <div class="notebook-background">
+           <section class="slider">
+               <div class="flexslider">
+                 <ul class="slides">
+                  <?php
+                    foreach ($slider as $q_slider) {
+                     ?>
+                        <li>
+                          <img style="width: 470px;object-fit: cover;height: 294px;" src="<?php echo base_url(); ?>assets/images/slider/<?php echo$q_slider->gambar ?>" />
+                          <p class="flex-caption"><a href="#"><?php echo $q_slider->nama_slider ?></a></p>
+                        </li>
+                     <?php
+                    }
+                  ?>
+                   
+                 </ul>
+               </div>
+             </section> 
         </div>
-      </header>
-      <!--End Page Header-->
+         
+      </div>
       <!--Page Body-->
       <div id="page-body" class="page-body">
 
@@ -72,120 +27,56 @@
         <section class="page-section">
           <div class="container">
             <div class="col-md-8">
-              <header class="hr-header section-header">
-                <h2 class="smb">BLOG TERBARU</h2>
-                <div class="separator-2-color"></div>
-              </header>
+              
             </div>
           </div>
           <div class="container">
+              <div class="row">
+                <div class="col-md-9">
 
-            <div class="row">
-              <div class="col-md-9">
-                <div class="article">
-                  <div class="inner">
-                    <div class="article-image">
-                      <img class="img-responsive img-thumbnail" src="http://assets.kompas.com/data/photo/2012/09/16/0611593p.jpg" alt="Blog Post Image"/>
-                    </div>
-                    <div class="deskripsi">
-                      <div class="judul">
-                        <a href="#" class="font-heading fz-6 mb-5"> Football Manager rilis November 2012 </a>
-                      </div>
-                      <div class="detail post">
-                        <div class="__meta"><span>Di Posting:&nbsp;<span class="__value">1 Januari 2016 </span></span><span>Oleh:&nbsp;<span class="__value">Admin</span></span><span>Comment:&nbsp;<span class="__value">9</span></span></div>
-                      </div>
-                      <div class="short-desc">
-                        <?php echo substr("Bagi penggemar permainan simulasi sepak bola, Football Manager, bersiaplah menunggu rilis resmi Football Manager 2013 (FM 2013). Sports Interactive telah mengumumkan bulan November 2012 akan diluncurkan seri terbaru FM 2013. Akan ada banyak fitur-fitur baru pada FM 2013. Namun, yang menarik perhatian adalah fitur: Football Manager Classic (FMC). Fitur FMC adalah fitur terbaru yang belum pernah ada pada seri-seri sebelumnya permainan ini. FMC diciptakan untuk memanjakan para penggila Football Manager yang sudah tidak memiliki banyak waktu untuk bermain.", 0, 250); ?>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
+                     <header class="hr-header section-header">
+                        <h2>BLOG TERBARU</h2>
+                    </header>
+
+                  <div class="blogs-terbaru">
+                   <?php 
+                      foreach ($blog_terbaru as $blog) {
+                        ?>
+                        <div class="blog">
+                          <div class="card">
+                            <img src="<?php echo base_url(); ?>assets/images/posting/<?php echo $blog->gambar; ?>" alt="Avatar" style="width:100%">
+                            <div class="blog-kategori">Pemrograman</div>
+                            <div class="container">
+                              <a href="<?php echo base_url(); ?>blog/detail/<?php echo $blog->slug_posting ?>"><h4 class="judul-posting"><?php echo $blog->judul_posting ?></h4></a>
+                              <div class="bottom">
+                                <div class="jenis">
+                                  <i class="fa fa-bookmark-o"></i>
+                                  <h4><?php echo $blog->jenis_posting ?><h4>
+                                </div>
+                                <div class="tanggal-posting">
+                                 <i class="fa fa-calendar"></i>
+                                  <h4>13 Desember 2017</h4>
+                                </div>
+                                <div class="view">
+                                   <i class="fa fa-eye"></i>
+                                  <h4><?php echo $blog->view; ?></h4>
+                                </div>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <?php  
+                      }
+                    ?>
                   </div>
                 </div>
-
-                 <div class="article">
-                  <div class="inner">
-                    <div class="article-image">
-                      <img class="img-responsive img-thumbnail" src="http://assets.kompas.com/data/photo/2012/09/16/0611593p.jpg" alt="Blog Post Image"/>
-                    </div>
-                    <div class="deskripsi">
-                      <div class="judul">
-                        <a href="#" class="font-heading fz-6 mb-5"> Football Manager rilis November 2012 </a>
-                      </div>
-                      <div class="detail post">
-                        <div class="__meta"><span>Di Posting:&nbsp;<span class="__value">1 Januari 2016 </span></span><span>Oleh:&nbsp;<span class="__value">Admin</span></span><span>Comment:&nbsp;<span class="__value">9</span></span></div>
-                      </div>
-                      <div class="short-desc">
-                        <?php echo substr("Bagi penggemar permainan simulasi sepak bola, Football Manager, bersiaplah menunggu rilis resmi Football Manager 2013 (FM 2013). Sports Interactive telah mengumumkan bulan November 2012 akan diluncurkan seri terbaru FM 2013. Akan ada banyak fitur-fitur baru pada FM 2013. Namun, yang menarik perhatian adalah fitur: Football Manager Classic (FMC). Fitur FMC adalah fitur terbaru yang belum pernah ada pada seri-seri sebelumnya permainan ini. FMC diciptakan untuk memanjakan para penggila Football Manager yang sudah tidak memiliki banyak waktu untuk bermain.", 0, 250); ?>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-
-                  </div>
+                <div class="col-md-3">
+                  
                 </div>
-
-                 <div class="article">
-                  <div class="inner">
-                    <div class="article-image">
-                      <img class="img-responsive img-thumbnail" src="http://assets.kompas.com/data/photo/2012/09/16/0611593p.jpg" alt="Blog Post Image"/>
-                    </div>
-                    <div class="deskripsi">
-                      <div class="judul">
-                        <a href="#" class="font-heading fz-6 mb-5"> Football Manager rilis November 2012 </a>
-                      </div>
-                     <div class="detail post">
-                        <div class="__meta"><span>Di Posting:&nbsp;<span class="__value">1 Januari 2016 </span></span><span>Oleh:&nbsp;<span class="__value">Admin</span></span><span>Comment:&nbsp;<span class="__value">9</span></span></div>
-                      </div>
-                      <div class="short-desc">
-                        <?php echo substr("Bagi penggemar permainan simulasi sepak bola, Football Manager, bersiaplah menunggu rilis resmi Football Manager 2013 (FM 2013). Sports Interactive telah mengumumkan bulan November 2012 akan diluncurkan seri terbaru FM 2013. Akan ada banyak fitur-fitur baru pada FM 2013. Namun, yang menarik perhatian adalah fitur: Football Manager Classic (FMC). Fitur FMC adalah fitur terbaru yang belum pernah ada pada seri-seri sebelumnya permainan ini. FMC diciptakan untuk memanjakan para penggila Football Manager yang sudah tidak memiliki banyak waktu untuk bermain.", 0, 250); ?>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-
-                 <div class="article">
-                  <div class="inner">
-                    <div class="article-image">
-                      <img class="img-responsive img-thumbnail" src="http://assets.kompas.com/data/photo/2012/09/16/0611593p.jpg" alt="Blog Post Image"/>
-                    </div>
-                    <div class="deskripsi">
-                      <div class="judul">
-                        <a href="#" class="font-heading fz-6 mb-5"> Football Manager rilis November 2012 </a>
-                      </div>
-                     <div class="detail post">
-                        <div class="__meta"><span>Di Posting:&nbsp;<span class="__value">1 Januari 2016 </span></span><span>Oleh:&nbsp;<span class="__value">Admin</span></span><span>Comment:&nbsp;<span class="__value">9</span></span></div>
-                      </div>
-                      <div class="short-desc">
-                        <?php echo substr("Bagi penggemar permainan simulasi sepak bola, Football Manager, bersiaplah menunggu rilis resmi Football Manager 2013 (FM 2013). Sports Interactive telah mengumumkan bulan November 2012 akan diluncurkan seri terbaru FM 2013. Akan ada banyak fitur-fitur baru pada FM 2013. Namun, yang menarik perhatian adalah fitur: Football Manager Classic (FMC). Fitur FMC adalah fitur terbaru yang belum pernah ada pada seri-seri sebelumnya permainan ini. FMC diciptakan untuk memanjakan para penggila Football Manager yang sudah tidak memiliki banyak waktu untuk bermain.", 0, 250); ?>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-                  </div>
-                </div>
-
-                 <div class="article">
-                  <div class="inner">
-                    <div class="article-image">
-                      <img class="img-responsive img-thumbnail" src="http://assets.kompas.com/data/photo/2012/09/16/0611593p.jpg" alt="Blog Post Image"/>
-                    </div>
-                    <div class="deskripsi">
-                      <div class="judul">
-                        <a href="#" class="font-heading fz-6 mb-5"> Football Manager rilis November 2012 </a>
-                      </div>
-                      <div class="detail post">
-                        <div class="__meta"><span>Di Posting:&nbsp;<span class="__value">1 Januari 2016 </span></span><span>Oleh:&nbsp;<span class="__value">Admin</span></span><span>Comment:&nbsp;<span class="__value">9</span></span></div>
-                      </div>
-                      <div class="short-desc">
-                        <?php echo substr("Bagi penggemar permainan simulasi sepak bola, Football Manager, bersiaplah menunggu rilis resmi Football Manager 2013 (FM 2013). Sports Interactive telah mengumumkan bulan November 2012 akan diluncurkan seri terbaru FM 2013. Akan ada banyak fitur-fitur baru pada FM 2013. Namun, yang menarik perhatian adalah fitur: Football Manager Classic (FMC). Fitur FMC adalah fitur terbaru yang belum pernah ada pada seri-seri sebelumnya permainan ini. FMC diciptakan untuk memanjakan para penggila Football Manager yang sudah tidak memiliki banyak waktu untuk bermain.", 0, 250); ?>
-                      </div>
-                    </div>
-                    <div class="clearfix"></div>
-
-                  </div>
-                </div>
-                 
               </div>
-            </div>
+
+           
 
             <!--<div class="row">
               <div class="col-md-9">
@@ -271,6 +162,97 @@
             </div>
           </div>
         </section>
+
+        <section class="page-section bgc-light supper-padding supper-padding-top">
+          <div class="container text-center">
+            <div class="col-md-8 col-md-offset-2">
+              <header class="hr-header section-header">
+                <h2 class="smb">OUR PORTFOLIO</h2>
+                <p class="common-serif __caption">Enjoy our portfolio</p>
+                <div class="separator-2-color"></div>
+                <p class="__content">Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.</p>
+              </header>
+            </div>
+          </div>
+          <div class="group-portfolio isotope-container">
+            <div class="isotope-grid remove-gutter container" style="position: relative; height: 943px;">
+              <div class="grid-sizer col-md-4 col-sm-6"></div>
+              <div class="grid-item col-md-8 col-sm-12" style="position: absolute; left: 0px; top: 0px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[0]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item col-md-4 col-sm-6" style="position: absolute; left: 800px; top: 0px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[1]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item col-md-4 col-sm-6" style="position: absolute; left: 0px; top: 314px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[2]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item col-md-4 col-sm-6" style="position: absolute; left: 400px; top: 314px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[3]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item col-md-4 col-sm-6" style="position: absolute; left: 0px; top: 628px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[4]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item col-md-8 col-sm-12" style="position: absolute; left: 400px; top: 629px;">
+                <div class="block-portfolio overlay-container basic"><img src="<?php echo base_url() ?>assets/images/portofolio/<?php echo $portofolio[5]->gambar; ?>" alt="BY THE SEA" class="__image">
+                  <div class="overlay bgc-dark-o-7">
+                    <div class="cell-vertical-wrapper">
+                      <div class="cell-middle">
+                        <h4 class="__title"><a href="#">BY THE SEA</a></h4>
+                        <div class="__caption font-serif-italic">Lorem ipsum dolor sit amet</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
 
       </div>
       <!--End Page Body-->

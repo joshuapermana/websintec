@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/fonts/megatron/styles.css">
     <!--Main stylesheet-->
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/flexslider/flexslider.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/css/main.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/web/css/custom.css">
 
@@ -74,229 +75,18 @@
                         <li><a href="#">ALUMNI</a></li>
                       </ul>
                     </li>
-                    <li><a href="<?php echo base_url() ?>main/portofolio">PORTOFOLIO</a></li>
-                    <li><a href="#">BLOG</a>
+                     <li><a href="#">BLOG</a>
                       <ul class="multi-floor-menu menu-right-base">
-                        <li><a href="#">BLOG LARGE IMAGE</a>
-                          <ul>
-                            <li><a href="blog-fullwidth.html">LARGE IMAGE FULLWIDTH</a>
-                            </li>
-                            <li><a href="blog-sidebar-left.html">LARGE IMAGE SIDEBAR LEFT</a>
-                            </li>
-                            <li><a href="blog-sidebar-right.html">LARGE IMAGE SIDEBAR RIGHT</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">BLOG LEFT IMAGE</a>
-                          <ul>
-                            <li><a href="blog-left-image-fullwidth.html">LEFT IMAGES IMAGE FULLWIDTH</a>
-                            </li>
-                            <li><a href="blog-left-image-sidebar-left.html">LEFT IMAGES IMAGE SIDEBAR LEFT</a>
-                            </li>
-                            <li><a href="blog-left-image-sidebar-right.html">LEFT IMAGES IMAGE SIDEBAR RIGHT</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">BLOG TIME LINE</a>
-                          <ul>
-                            <li><a href="blog-timeline-fullwidth.html">TIME LINE FULLWIDTH</a>
-                            </li>
-                            <li><a href="blog-timeline-sidebar-left.html">TIME LINE SIDEBAR LEFT</a>
-                            </li>
-                            <li><a href="blog-timeline-sidebar-right.html">TIME LINE SIDEBAR RIGHT</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">BLOG MASONRY</a>
-                          <ul>
-                            <li><a href="blog-masonry-wide.html">MASONRY WIDE</a>
-                            </li>
-                            <li><a href="blog-masonry-fullwidth.html">MASONRY FULLWIDTH</a>
-                            </li>
-                            <li><a href="blog-masonry-sidebar-left.html">MASONRY SIDEBAR LEFT</a>
-                            </li>
-                            <li><a href="blog-masonry-sidebar-right.html">MASONRY SIDEBAR RIGHT</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">BLOG SINGLE</a>
-                          <ul>
-                            <li><a href="blog-single-sidebar-left.html">SINGLE SIDEBAR LEFT</a>
-                            </li>
-                            <li><a href="blog-single-fullwidth.html">SINGLE FULLWIDTH</a>
-                            </li>
-                            <li><a href="blog-single-standard.html">SINGLE STANDARD</a>
-                            </li>
-                            <li><a href="blog-single-audio.html">SINGLE AUDIO</a>
-                            </li>
-                            <li><a href="blog-single-gallery.html">SINGLE GALLERY</a>
-                            </li>
-                            <li><a href="blog-single-quote.html">SINGLE QUOTE</a>
-                            </li>
-                            <li><a href="blog-single-video.html">SINGLE VIDEO</a>
-                            </li>
-                          </ul>
-                        </li>
+                        <li><a href="#">TUTORIAL</a></li>
+                        <li><a href="#">ARTIKEL</a></li>
                       </ul>
                     </li>
-                  <li><a href="#">JASA</a></li>
-                   
-                  
-                    <li><a href="#">WORKS</a>
-                      <ul class="mega-menu menu-5-col menu-fullwidth menu-hr-heading">
-                        <li><a href="#">3 COLUMNS</a>
-                          <ul>
-                            <li><a href="portfolio-3-columns-hover-style-1.html">3 COLUMNS STYLE 01</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-hover-style-2.html">3 COLUMNS STYLE 02</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-hover-style-3.html">3 COLUMNS STYLE 03</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-hover-style-4.html">3 COLUMNS STYLE 04</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-hover-style-5.html">3 COLUMNS STYLE 05</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-hover-style-6.html">3 COLUMNS STYLE 06</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-no-space.html">NO SPACE</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-wide.html">WIDE SCREEN</a>
-                            </li>
-                            <li><a href="portfolio-3-columns-wide-no-space.html">WIDE &amp; NO SPACE</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">4 COLUMNS</a>
-                          <ul>
-                            <li><a href="portfolio-4-columns-hover-style-1.html">4 COLUMNS STYLE 01</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-hover-style-2.html">4 COLUMNS STYLE 02</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-hover-style-3.html">4 COLUMNS STYLE 03</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-hover-style-4.html">4 COLUMNS STYLE 04</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-hover-style-5.html">4 COLUMNS STYLE 05</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-hover-style-6.html">4 COLUMNS STYLE 06</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-no-space.html">NO SPACE</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-wide.html">WIDE SCREEN</a>
-                            </li>
-                            <li><a href="portfolio-4-columns-wide-no-space.html">WIDE &amp; NO SPACE</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">5 COLUMNS</a>
-                          <ul>
-                            <li><a href="portfolio-5-columns-hover-style-1.html">5 COLUMNS STYLE 01</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-hover-style-2.html">5 COLUMNS STYLE 02</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-hover-style-3.html">5 COLUMNS STYLE 03</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-hover-style-4.html">5 COLUMNS STYLE 04</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-hover-style-5.html">5 COLUMNS STYLE 05</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-hover-style-6.html">5 COLUMNS STYLE 06</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-no-space.html">NO SPACE</a>
-                            </li>
-                            <li> <a href="portfolio-5-columns-wide.html">WIDE SCREEN</a>
-                            </li>
-                            <li><a href="portfolio-5-columns-wide-no-space.html">WIDE &amp; NO SPACE</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">SPECIAL STYLE</a>
-                          <ul>
-                            <li><a href="portfolio-carousel.html">CAROUSEL</a>
-                            </li>
-                            <li><a href="portfolio-hover-effect.html">HOVER EFFECT<span class="__flag border-danger color-danger">HOT</span></a>
-                            </li>
-                            <li><a href="portfolio-masonry.html">MASONRY</a>
-                            </li>
-                            <li><a href="portfolio-masonry-wide.html">MASONRY WIDE</a>
-                            </li>
-                            <li><a href="portfolio-shortcode-masonry.html">METRO STYLE 01</a>
-                            </li>
-                            <li><a href="portfolio-shortcode-masonry-2.html">METRO STYLE 02</a>
-                            </li>
-                            <li><a href="portfolio-2-columns-hover-style-1.html">2 COLUMNS STYLE 01</a>
-                            </li>
-                            <li><a href="portfolio-2-columns-hover-style-2.html">2 COLUMNS STYLE 02</a>
-                            </li>
-                            <li><a href="portfolio-2-columns-hover-style-3.html">2 COLUMNS STYLE 03</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">SINGLE PORTFOLIO</a>
-                          <ul>
-                            <li><a href="portfolio-single-1.html">PORTFOLIO SINGLE 01</a>
-                            </li>
-                            <li><a href="portfolio-single-2.html">PORTFOLIO SINGLE 02</a>
-                            </li>
-                            <li><a href="portfolio-single-3.html">PORTFOLIO SINGLE 03</a>
-                            </li>
-                            <li><a href="portfolio-single-4.html">PORTFOLIO SINGLE 04</a>
-                            </li>
-                            <li><a href="portfolio-single-5.html">PORTFOLIO SINGLE 05</a>
-                            </li>
-                            <li><a href="portfolio-single-6.html">PORTFOLIO SINGLE 06</a>
-                            </li>
-                            <li><a href="portfolio-single-7.html">PORTFOLIO SINGLE 07</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#">SHOP</a>
-                      <ul class="mega-menu menu-right-base menu-3-col menu-hr-heading">
-                        <li><a href="#">SHOP CATEGORY</a>
-                          <ul>
-                            <li><a href="shop-category-fullwidth.html">CATEGORY FULLWIDTH</a>
-                            </li>
-                            <li><a href="shop-category-sidebar-left.html">CATEGORY SIDE BAR LEFT</a>
-                            </li>
-                            <li><a href="shop-category-sidebar-right.html">CATEGORY SIDE BAR RIGHT</a>
-                            </li>
-                            <li><a href="shop-category-top-slider.html">CATEGORY TOP SLIDER</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">SINGLE SHOP</a>
-                          <ul>
-                            <li><a href="shop-single-fullwidth.html">SINGLE FULLWIDTH</a>
-                            </li>
-                            <li><a href="shop-single-sidebar-left.html">SINGLE SIDE BAR LEFT</a>
-                            </li>
-                            <li><a href="shop-single-sidebar-right.html">SINGLE SIDE BAR RIGHT</a>
-                            </li>
-                            <li><a href="shop-single-top-slider.html">SINGLE TOP SLIDER</a>
-                            </li>
-                            <li><a href="shop-single-variable.html">SINGLE VARIABLE</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="#">OTHER PAGE</a>
-                          <ul>
-                            <li><a href="shop-account.html">MY ACCOUNT</a>
-                            </li>
-                            <li><a href="shop-cart.html">CART</a>
-                            </li>
-                            <li><a href="shop-checkout.html">CHECK OUT</a>
-                            </li>
-                            <li><a href="shop-order-tracking.html">ORDER TRACKING</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
+                    <li><a href="<?php echo base_url() ?>main/portofolio">PORTOFOLIO</a></li>
+                    
+                    <li><a href="#">JASA</a></li>
+
                   </ul>
                 </nav>
-                
               </div>
             </div>
           </div>
@@ -1784,9 +1574,22 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/vendors/jquery-modal/jquery.modal.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/flexslider/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/web/js/main.js"></script>
     <!-- Google analytics-->
     <script type="text/javascript">(function(b,o,i,l,e,r){b.GoogleAsnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-57387972-3');ga('send','pageview');</script>
     <!--End Javascript Library-->
+
+    <script type="text/javascript">
+        $(window).load(function(){
+        $('.flexslider').flexslider({
+          animation: "fade",
+          controlNav: true,
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });
+      });
+    </script>
   </body>
 </html>

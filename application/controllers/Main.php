@@ -4,16 +4,22 @@
             parent::__construct();
             $this->load->model('NamaFileModel', 'nama_file_model');
             $this->load->model('PortofolioModel', 'portofolio_model');
+            $this->load->model('BlogModel', 'blog_model');
+            $this->load->model('SliderModel', 'slider_model');
             $this->load->library('Template_Website', 'template_website');
 
             $this->data['page'] = '';
             $this->data['title'] = 'Sintec - Smanip Information Technology';
+            $this->data['blog_kategori'] = 'A';
             
         }
 
         function index(){
             $data = $this->data;
             $data['page']  = 'index';
+            $data['blog_terbaru'] = $this->blog_model->get_terbaru();
+            $data['slider'] = $this->slider_model->get_all();
+            $data['portofolio'] = $this->portofolio_model->get_terbaru();
             $contoh = $this->nama_file_model->get_all();
             $this->template_website->display('web/content/index', $data);
             
@@ -48,6 +54,22 @@
                     # code...
                     break;
             }
+        }
+
+        function blog($kategori=null){
+            if($kategori == null){
+
+            }else{
+
+            }
+
+            $this->template_website->display('web/content/blog');
+        }
+
+        function detailblog($slug){
+            $data = $this->data;
+            $data['blog'] = $this->blog_model->get_by_slug($slug);
+            $this->template_website->display('web/content/detailblog', $data);
         }
 
         function sejarah(){
